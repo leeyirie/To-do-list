@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #e5f0ff; 
+    color: #495057;
+    margin: 0;
+    font-family: 'Abel', sans-serif;
+    font-weight: lighter;
+}
+
+
+.app {
+    background-color: #ffffff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 768px;
+    padding: 20px;
+}
+
+h1 {
+    overflow: hidden; 
+    border-right: .15em solid rgb(24, 79, 228); 
+    white-space: nowrap; 
+    letter-spacing: .15em; 
+    margin-left: 0.5rem;
+    animation: 
+      typing 3s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 35% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(43, 84, 220); }
+  }
+  
+main {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	padding: 2rem 1.5rem;
+}
+
+.app header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+
+.app header h1 {
+	font-size: 28px;
+	color: #007bff;
+	font-weight: 600;
+}
+
+.app header button {
+	background-color: #007bff; 
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+    border: none;
+	font-size: 16px;
+	transition: all 0.2s ease;
+}
+
+.app header button:hover {
+	background-color: #0056b3; 
+	transform: translateY(-2px); 
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    background-color: #e4efff;
+    border: none;
+    border-radius: 17px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: all 0.2s ease;
+}
+
+
+.item:last-of-type {
+	margin-bottom: 0;
+}
+
+.item:hover {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.item input[type="checkbox"] {
+	margin-right: 1rem;
+    margin-left: 10px;;
+    display:inline-block;
+}
+
+.item input[type="text"] {
+    flex: 1;
+    width: 100%;
+    border: none;
+    background: white;
+    color: #495057;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-right: 0.5rem;
+}
+
+
+
+
+.item.complete {
+	opacity: 0.8;
+}
+
+.item.complete input[type="text"] {
+	text-decoration: line-through;
+}
+
+
+
+
+.actions button {
+	background-color: transparent;
+	color: #0062ff;
+	margin-right: 1rem;
+	opacity: 0.9;
+    font-size: 22px;
+	transition: all 0.2s ease;
+    border: none;
+    padding: 0;
+    margin-right: 0.5rem;
+}
+
+.actions button:hover {
+	opacity: 1;
+	color: #ff004c;
+}
